@@ -17,5 +17,5 @@ resource "aws_autoscaling_group" "autoscaling_group_terraform" {
         version        = var.autoscaling_group_launch_template_version
     }
 
-    tags               = local.tags
+    tags               = var.extra_tags
 }
